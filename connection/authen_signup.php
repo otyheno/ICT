@@ -12,7 +12,7 @@ require('dbconnect.php');
 		$FirstName = $_POST['f_name'];
 		$LastName = $_POST['l_name'];
 		$Email = $_POST['Email'];
-		$Password = $_POST['Password'];
+		$Password = md5($_POST['Password']);
 
 
 $sql = "INSERT INTO `Users`(`FirstName`, `LastName`, `Email`, `Password`) VALUES ('$FirstName', '$LastName', '$Email', '$Password')";

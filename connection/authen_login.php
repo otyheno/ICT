@@ -5,7 +5,7 @@ if (isset($_POST['login'])) {
 require('dbconnect.php');
 
 	$Email = $_POST['Email'];
-	$Password = $_POST['Password'];
+	$Password = md5($_POST['Password']);
 
 // CHECK FOR THE RECORD FROM TABLE
 
