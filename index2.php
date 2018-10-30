@@ -36,7 +36,7 @@
         <li ><a href="contact.php">Contact</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-         <li><b>Welcome : <i><?php echo $login_session; ?></i></b></li>
+         <li><b>Welcome :<i><?php echo $login_session; ?></i></b></li>
         <li><a href="login.php">Log Out <i class="fas fa-user"></i></a></li>
         </ul>
     </div><!-- /.navbar-collapse -->
